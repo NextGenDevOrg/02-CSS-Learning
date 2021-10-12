@@ -1,0 +1,39 @@
+#Box{
+    padding: 15px;
+    margin: 15px;
+    width:100%;
+    height: auto;
+    background-color: antiquewhite;
+    border: 2px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.A{
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    background: red;
+    border: 2px black solid;
+}
+
+.B{
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+    background: blue;
+    border: 2px black solid;
+}
+
+.C{
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    background: pink;
+    border: 2px black solid;
+}
