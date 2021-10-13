@@ -53,7 +53,9 @@ body {
 }
 .product-img {
   display: block;
-  margin: 50px auto 30px;
+  margin: 50px auto;
+
+  padding-top: 30px;
   height: 300px;
   width: 300px;
 }
