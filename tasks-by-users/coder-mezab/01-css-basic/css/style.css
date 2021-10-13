@@ -32,7 +32,7 @@ body {
   padding: 6px;
   font-size: 14px;
   border-radius: 5px;
-  background: #97781c;
+
   background: -webkit-linear-gradient(top, #996800 0%, #ffd34f 100%);
   box-shadow: 3px 3px 6px 0 goldenrod;
 }
@@ -53,16 +53,15 @@ body {
 }
 .product-img {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 50px;
-  padding-top: 30px;
+  margin: 50px auto 30px;
   height: 300px;
   width: 300px;
 }
 .name {
-  margin-bottom: 0%;
+  margin-bottom: 0;
+
   display: block;
+
   text-align: center;
   text-transform: capitalize;
 }
@@ -72,11 +71,15 @@ body {
 }
 .add {
   display: inline-block;
+
+  border-radius: 8px;
   border: 1px solid black;
   color: #181818;
+
   padding: 10px;
-  border-radius: 8px;
+
   background: -webkit-linear-gradient(top, #ff35ff 0%, #a500ff 100%);
+
   text-decoration: none;
 }
 #product a:hover {
@@ -88,10 +91,7 @@ body {
 .rating {
   height: 30px;
   display: block;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
+  margin: 10px auto 25px;
 }
 #foot img {
   height: 500px;
