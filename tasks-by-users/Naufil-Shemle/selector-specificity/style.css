@@ -1,0 +1,18 @@
+/* this is implicitly targeting the <strong> tag */
+/* In this case main-content is the parent of <P> tag and we know that ID contains 100 points but an element contains 1 point that ID will win */
+#main-content p {
+  color: red;
+}
+
+p {
+  color: balck;
+}
+
+.test {
+  color: green;
+}
+/* this is explicitly targeting <strong> tag */
+/* In this case <p> tag is the parent of <strong> tag but this time it will follow the casecade and it will take the value of <strong> tag not the <p> tag */
+strong {
+  color: pink;
+}
