@@ -1,0 +1,107 @@
+:root{
+    --c-red: #f00;
+    --c-lgblue: #0ff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #555;
+}
+
+.ring, .ring::before, span, span::before, span::after{
+    position: absolute;
+}
+
+.ring{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 150px;
+    height: 150px;
+
+    background: transparent;
+    border: 3px solid var(--c-red);
+    border-radius: 50%;
+    
+    text-align: center;
+    line-height: 100px;
+    font-family: monospace;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--c-lgblue);
+    text-shadow: 2px 2px 5px rgba(255,0,0,0.8);
+    
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.ring::before, span::before, span::after{
+    content: '';
+    border-radius: 50%;
+}
+
+.ring::before{
+    top: -3px;
+    left: -3px;
+    
+    height: 100%;
+    width: 100%;
+    
+    border: 3px solid transparent;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    
+    animation: snake 3s linear infinite;
+}
+
+span{
+    display: block;
+    top: calc(50% - 2px);
+    
+    width: 100%;
+    height: 4px;
+    transform-origin: center;
+    
+    animation: eyes 3s linear infinite;
+}
+
+span::before, span::after{
+    top: -5px;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 0 20px;
+}
+
+span::before{
+    right: -8px;
+    background: var(--c-lgblue);
+}
+
+span::after{
+    right: 145px;
+    background: var(--c-red);
+    box-shadow: 0 0 20px var(--c-red);
+}
+
+@keyframes snake{
+    0%{
+        transform: rotate(0deg)
+    }
+    
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes eyes{
+    0%{
+        transform: rotate(40deg)
+    }
+    
+    100%{
+        transform: rotate(400deg)
+    }
+    
+}
