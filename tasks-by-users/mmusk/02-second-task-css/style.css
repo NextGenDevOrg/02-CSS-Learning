@@ -248,10 +248,7 @@ p {
   margin-bottom: 20px;
 }
 
-.footer-col-1,
-.footer-col-2,
-.footer-col-3,
-.footer-col-4 {
+[class^="footer"]{
   min-width: 250px;
   margin-bottom: 20px;
 }
@@ -344,9 +341,7 @@ ul {
   .row {
     text-align: center;
   }
-  .col-2,
-  .col-3,
-  .col-4 {
+  [class^="col"] {
     flex-basis: 100%;
   }
 }
