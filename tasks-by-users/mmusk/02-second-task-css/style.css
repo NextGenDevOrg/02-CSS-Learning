@@ -116,8 +116,7 @@ p {
 .small-container {
   max-width: 1080px;
   margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 0 25px;
 }
 
 .col-4 {
@@ -323,9 +322,7 @@ ul {
   nav ul li {
     display: block;
 
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+margin: 10px 50px 10px 0;
   }
   nav ul li a {
     color: #fff;
