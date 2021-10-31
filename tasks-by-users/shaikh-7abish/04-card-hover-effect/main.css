@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.container,
+.container .card .face.face1,
+.container .card .face.face2{
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+img{
+    width: min(100px, 8rem);
+    margin-top: 2rem;
+}
+
+.container{
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 25vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container .card .face{
+    width: min(300px, 18rem);
+    height: min(200px, 12rem);
+    transition: .5s;
+}
+
+.container .card .face.face1{
+    background: #999;
+    z-index: 1;
+}
+
+.container .card:hover .face.face1{
+    background: #ff005f;
+    transform: translateY(-50px);
+}
+
+.container .card .face.face1 .content{
+    opacity: .5;
+    transition: .5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content h3{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.container .card .face.face2{
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    opacity: 1;
+    transform: translateY(-12rem);
+}
+
+.container .card:hover .face.face2{
+    opacity: 1;
+    transform: translateY(-3.5rem)
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+}
+
+.container .card .face.face2 .content a{
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 400;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.container .card .face.face2 .content a:hover{
+    background: #000;
+    color: #fff;
+}
+
