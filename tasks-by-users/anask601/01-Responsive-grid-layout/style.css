@@ -10,8 +10,7 @@
     width: 100vw;
     height: 100vh;
 
-    grid-template-columns:repeat(4, 1fr);
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template:0.2fr 1.5fr 1.2fr 0.8fr / repeat (4, 1fr);
     grid-template-areas: 
     "nav nav nav nav"
     "sidebar main main main"
