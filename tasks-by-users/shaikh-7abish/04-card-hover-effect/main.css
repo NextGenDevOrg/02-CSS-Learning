@@ -57,10 +57,14 @@ img{
 
 .container .card .face.face2{
     background: #fff;
+    
     padding: 20px;
+    
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    
     opacity: 1;
+    
     transform: translateY(-12rem);
 }
 
@@ -74,12 +78,15 @@ img{
 }
 
 .container .card .face.face2 .content a{
-    margin-top: 10px;
     display: inline-block;
-    text-decoration: none;
+    
+    margin-top: 10px;
     padding: 5px;
+    
+    text-decoration: none;
     font-weight: 400;
     color: #000;
+    
     border: 1px solid #000;
     border-radius: 5px;
 }
