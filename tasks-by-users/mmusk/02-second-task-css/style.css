@@ -16,6 +16,15 @@ body {
   padding: 20px;
 }
 
+.navbar .logo img{
+  width: 125px;
+}
+
+.navbar img{
+  width: 30px; 
+  height:30px;
+}
+
 nav {
   flex: 1;
 
