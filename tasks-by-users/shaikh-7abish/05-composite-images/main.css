@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+.container,
+.container img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+}
+
+.container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.container img:nth-child(2) {
+  mix-blend-mode: multiply;
+}
