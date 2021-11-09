@@ -22,7 +22,7 @@ body {
 
   border: 1px solid #000000;
 }
-.header {
+header {
   grid-column-start: 1;
   grid-column-end: 4;
 }
@@ -32,7 +32,7 @@ body {
   grid-column-start: 1;
   grid-column-end: 2;
 }
-.footer {
+footer {
   grid-column: 1 / span 3;
 }
 .content-long {
