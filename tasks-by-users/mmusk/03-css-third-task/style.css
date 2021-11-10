@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
+  min-height: 100vh;
+
+  background: #333;
+
+  justify-content: center;
+  align-items: center;
+  
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  position: relative;
+
+  width: 1000px;
+}
+.container .card {
+  position: relative;
+
+  margin: auto;
+  min-width: 300px;
+
+  flex-basis: 30%;
+}
+.container .card .face {
+  width: 300px;
+  height: 200px;
+
+  transition: 1s;
+}
+.container .card .face.face1 {
+  display: flex;
+
+  margin: auto;
+
+  position: relative;
+
+  background: white;
+
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 0 30px black;
+  border-radius: 10px 10px 0 0;
+
+  transform: translate(0, 100px);
+
+  z-index: 1;
+}
+.container .card:hover .face.face1 {
+  transform: translate(0, 0);
+  background: tomato;
+}
+.container .card .face.face1 .content {
+  opacity: 0.4;
+  transition: 0.5s;
+}
+.container .card:hover .face.face1 .content {
+  opacity: 1;
+}
+.container .card .face.face1 img {
+  width: 100px;
+  height: 100px;
+}
+
+.container .card .face.face1 h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.container .card .face.face2 {
+  position: relative;
+
+  margin: auto;
+
+  display: flex;
+
+  padding: 20px;
+
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 30px black;
+
+  transform: translateY(-100px);
+}
+.container .card:hover .face.face2 {
+  transform: translateY(0);
+  background: whitesmoke;
+}
+
+.container .card .face.face2 a {
+  padding: 5px;
+
+  color: black;
+  background: rgb(221, 192, 248);
+
+  text-decoration: none;
+
+  font-weight: 900;
+
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.container .card .face.face2 a:hover {
+  background: rgb(255, 155, 155);
+}
