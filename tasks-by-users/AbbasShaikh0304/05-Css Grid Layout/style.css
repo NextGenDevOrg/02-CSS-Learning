@@ -1,5 +1,7 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .container {
   display: grid;
@@ -17,7 +19,9 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
-.container div {
+.container div,
+header,
+footer {
   padding: 10px;
 
   border: 1px solid #000000;
