@@ -239,18 +239,18 @@ p {
 
 /* footer */
 
-.footer {
+footer {
   background: #000;
   color: #8a8a8a;
 
   padding: 60px 0 20px;
 }
 
-.footer p {
+footer p {
   color: #8a8a8a;
 }
 
-.footer h3 {
+footer h3 {
   color: #fff;
 
   margin-bottom: 20px;
@@ -316,7 +316,7 @@ ul {
 }
 
 /* Media query for Menu */
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
   nav ul {
     position: absolute;
 
@@ -343,7 +343,7 @@ margin: 10px 50px 10px 0;
   }
 }
 
-@media only screen and (max-width: 00px) {
+@media all and (max-width: 500px) {
   .row {
     text-align: center;
   }
