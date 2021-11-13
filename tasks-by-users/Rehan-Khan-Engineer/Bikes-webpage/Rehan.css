@@ -1,0 +1,42 @@
+/* Bike ki Dukaan */
+body{ margin: 0; font-family: Arial; background: white;}
+
+#wrapper {margin: 0 auto; width: 980px; background: white;}
+
+#main-navigation{ background: #181818; padding: 10px; }
+
+#main-navigation ul { text-align: right; list-style-type: none; margin-right: 10px; }
+
+li {margin-left: 20px; display: inline-block; }
+
+#main-navigation a {color: white; text-decoration: none; text-transform: uppercase; font-size: 14px; padding: 6px;}
+
+.current { background: #8f746c; border-radius: 4px;}
+
+/* ask about this */
+#lead-banner img {width: 100%; height: 500px;}
+
+#shop {text-align: center; margin: 30px;}
+
+.product-name { font-size: 16px; margin-bottom: 0;}
+
+.price {display: block; font-size: 58px;}
+
+a.add-to-bag{display: block;
+color: #8f746c;
+text-transform: uppercase;
+text-decoration: none;
+font-size: 12px;
+margin: 20px auto;
+border: 2px solid #8f746c;
+padding: 10px 0px;
+width: 20%;
+}
+
+
+a.add-to-bag:hover {background: #8f746c;
+    color: white;}
+
+#footer-banner img{
+    width: 100%;
+}
