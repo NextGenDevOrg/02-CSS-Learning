@@ -28,12 +28,15 @@ body {
 
 .service {
   float: left;
+  position: relative;
+
   background: #eee;
+
   width: 29.33%;
+  height: 140px;
+
   margin: 1%;
   padding: 1%;
-  height: 140px;
-  position: relative;
 }
 
 .service:nth-child(1) {
@@ -84,28 +87,29 @@ aside {
 }
 
 #banner {
+  position: relative;
+  margin: 1%;
   max-height: 300px;
   overflow: hidden;
-  margin: 1%;
-  position: relative;
 }
 
 #banner h2 {
   position: absolute;
   top: 30px;
-  margin: 0;
   width: 100%;
+  margin: 0;
   text-align: center;
   color: #fff;
 }
 
 nav {
-  background: #333;
   position: fixed;
-  z-index: 1;
-  top: 0;
   left: 0;
+  top: 0;
+
   width: 100%;
+  background: #333;
+  z-index: 1;
 }
 
 nav ul:after {
