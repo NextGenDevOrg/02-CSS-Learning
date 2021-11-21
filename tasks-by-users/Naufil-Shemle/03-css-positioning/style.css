@@ -2,10 +2,12 @@ body {
   background: #c2c2c2;
 }
 .wrapper {
-  background: #fff;
   width: 960px;
+
   margin: 0 auto;
   padding: 20px;
+
+  background: #fff;
 }
 
 .wrapper:after {
@@ -68,16 +70,24 @@ body {
   column-count: 3;
   column-width: 50px;
   column-rule: 1px solid #ccc;
+
   text-align: justify;
 }
 
 section,
 aside {
   float: left;
+
   width: 46%;
+
   margin: 1%;
   padding: 1%;
+
   background: #f2f2f2;
+}
+
+aside img {
+  width: 100%;
 }
 
 .columns:after {
@@ -93,12 +103,20 @@ aside {
   overflow: hidden;
 }
 
+#banner img {
+  width: 100%;
+}
+
 #banner h2 {
   position: absolute;
   top: 30px;
+
   width: 100%;
+
   margin: 0;
+
   text-align: center;
+
   color: #fff;
 }
 
