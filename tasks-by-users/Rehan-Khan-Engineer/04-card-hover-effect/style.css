@@ -47,16 +47,14 @@ body {
 }
 
 .row:hover .row-1 {
-  background: #ff005f;
+  background-color: #ff005f;
 
   transition: 0.5s;
   transform: translateY(0);
 }
 
 .row-1 h3 {
-  margin: 0;
-  margin-left: 40%;
-  margin-bottom: 10%;
+  margin: 0 0 10% 40%;
 
   font-size: 1.5rem;
 
