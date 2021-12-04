@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -81,6 +82,8 @@ body {
 
 .image-box img {
   position: absolute;
+  width: 90%;
+  height: 100%;
   transform: rotateY(180deg);
 }
 
