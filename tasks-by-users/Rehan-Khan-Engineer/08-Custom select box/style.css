@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  background-color: #004882;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box select {
+  background-color: #0563af;
+  color: #fff;
+
+  height: 3rem;
+  width: 15rem;
+  padding: 10px;
+
+  font-size: 16px;
+
+  outline: none;
+  border: none;
+
+  /* Important */
+  -webkit-appearance: button;
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Not Working */
+
+/* .box:before {
+  content: "f13a";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 3rem;
+  width: 4rem;
+  background-color: #007ce0;
+  pointer-events: none;
+  text-align: center;
+  line-height: 3rem;
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Free";
+}
+
+.box:hover:before {
+  background-color: #0472ca;
+} */
+
+/* This is how i countered the issue */
+
+.box span i {
+  z-index: 1;
+  pointer-events: none;
+
+  position: absolute;
+  top: 0px;
+  right: 0;
+
+  height: 3rem;
+  width: 4rem;
+
+  text-align: center;
+
+  line-height: 3rem;
+
+  background: #007ce0;
+  color: #fff;
+
+  font-size: 2rem;
+
+  font-family: "Times New Roman", Times, serif;
+}
+
+.box:hover span i {
+  background-color: #0472ca;
+}
