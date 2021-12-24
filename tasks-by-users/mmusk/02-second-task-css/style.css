@@ -16,6 +16,15 @@ body {
   padding: 20px;
 }
 
+.navbar .logo img{
+  width: 125px;
+}
+
+.navbar img{
+  width: 30px; 
+  height:30px;
+}
+
 nav {
   flex: 1;
 
@@ -230,18 +239,18 @@ p {
 
 /* footer */
 
-.footer {
+footer {
   background: #000;
   color: #8a8a8a;
 
   padding: 60px 0 20px;
 }
 
-.footer p {
+footer p {
   color: #8a8a8a;
 }
 
-.footer h3 {
+footer h3 {
   color: #fff;
 
   margin-bottom: 20px;
@@ -307,7 +316,7 @@ ul {
 }
 
 /* Media query for Menu */
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
   nav ul {
     position: absolute;
 
@@ -334,7 +343,7 @@ margin: 10px 50px 10px 0;
   }
 }
 
-@media only screen and (max-width: 00px) {
+@media all and (max-width: 500px) {
   .row {
     text-align: center;
   }
@@ -382,4 +391,43 @@ select:focus {
 .page-btn span:hover {
   background: #ff523b;
   color: #fff;
+}
+
+/* Single Product details */
+
+.single-product{
+  margin-top: 80px;
+}
+
+.single-product .col-2 img{
+  padding: 0;
+}
+
+.single-product .col-2 {
+  padding: 20px;
+}
+
+.single-product .col-2 h4{
+  margin: 20px 0;
+
+  font-size: 22px;
+  font-weight: bold; 
+} 
+
+.single-product .col-2 select{
+  display: block;
+
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.single-product .col-2 input{
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  margin-right: 10px;
+
+  font-size: 20px;
+  
+  border: 1px solid #ff523b;
 }
