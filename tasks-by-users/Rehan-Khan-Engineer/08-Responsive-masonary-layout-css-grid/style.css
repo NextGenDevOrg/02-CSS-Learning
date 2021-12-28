@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+
+  box-sizing: border-box;
+
+  height: 100vh;
+
+  background-color: rgb(24, 23, 23);
+  color: white;
+
+  display: grid;
+  gap: 1rem;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  grid-template-areas:
+    "one one two three"
+    "four five two six"
+    "four seven seven seven";
+}
+
+div {
+  padding: 1rem;
+
+  background-color: rgb(48, 45, 45);
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+div:hover {
+  background-color: rgb(194, 34, 95);
+  transform: scale(1.1);
+}
+
+div img {
+  height: 6rem;
+  width: 6rem;
+}
+
+div p {
+  margin: 1rem 0;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    grid-template: repeat(7, 1fr) / 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven";
+  }
+}
