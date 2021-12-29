@@ -1141,7 +1141,7 @@ img {
   }
 
   .home_content {
-    grid-template-columns: 0.25fr 3 fr;
+    grid-template-columns: 0.25fr 3fr;
   }
 
   .home_blob {
