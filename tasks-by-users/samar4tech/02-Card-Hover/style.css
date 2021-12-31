@@ -1,9 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 
   min-height: 100vh;
-  background: #333;
+  background-color: #333;
 
   display: flex;
   justify-content: center;
@@ -27,7 +28,7 @@ body {
 
 .container .card .face.face1 {
   position: relative;
-  background: #333;
+  background-color: #333;
 
   display: flex;
   justify-content: center;
@@ -39,7 +40,7 @@ body {
 
 .container .card:hover .face.face1 {
   transform: translateY(0px);
-  background: #ff0057;
+  background-color: #ff0057;
 }
 
 .container .card .face.face1 .content {
@@ -102,5 +103,5 @@ body {
 
 .container .card .face.face2 .content a:hover {
   color: #fff;
-  background: #333;
+  background-color: #333;
 }
