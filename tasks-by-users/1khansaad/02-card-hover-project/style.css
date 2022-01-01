@@ -1,4 +1,4 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -60,6 +60,4 @@ body {
   color: white;
   box-shadow: 2px 2px #333;
   transition: 0.3s;
-}
-@media screen and {
 }
