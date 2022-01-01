@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #333;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.cards {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 300px;
+}
+.container .cards .face1 img {
+  margin: 15px;
+}
+.container .cards .face1 img:hover {
+  width: 105px;
+  transition: 0.2s;
+}
+.container .cards .face1 {
+  background: rgb(177, 157, 157);
+  width: 100%;
+  z-index: 1;
+  transform: translateY(100px);
+  height: 33vh;
+}
+.container .cards:hover .face1 {
+  transform: translateY(0);
+  transition: 0.5s;
+}
+.container .cards .face2 {
+  transform: translateY(-106px);
+  height: 33vh;
+  background: rgb(221, 33, 33);
+  overflow: hidden;
+}
+.container .cards:hover .face2 {
+  transform: translateY(0);
+}
+.container .cards .face2 a {
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  padding: 1%;
+}
+.container .cards .face2 p {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 1.1em;
+}
+.container .cards .face2 a:hover {
+  background: black;
+  color: white;
+  box-shadow: 2px 2px #333;
+  transition: 0.3s;
+}
+@media screen and {
+}
