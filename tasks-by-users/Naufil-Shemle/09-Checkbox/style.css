@@ -16,13 +16,10 @@ body {
 }
 
 input[type="checkbox"] {
-  /* position: relative; */
-
   width: 350px;
   height: 150px;
 
   appearance: none;
-  /* outline: none; */
 
   border-radius: 100px;
 
