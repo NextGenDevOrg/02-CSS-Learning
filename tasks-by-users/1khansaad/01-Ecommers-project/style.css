@@ -8,8 +8,11 @@ body {
 }
 .navbar {
   display: flex;
-  align-items: center;
+  align-content: center;
   padding: 20px;
+}
+.cart-img {
+  align-self: center;
 }
 nav {
   flex: 1;
@@ -20,7 +23,7 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  margin: 20px;
+  margin: 10px;
 }
 a {
   text-decoration: none;
@@ -88,7 +91,7 @@ a {
   min-width: 200px;
 }
 .small-container {
-  max-width: 1080px;
+  max-width: fit-content;
   margin: auto;
   padding-left: 0 25px;
 }
@@ -112,9 +115,14 @@ a {
 .title::after {
   content: "";
   background: red;
-  width: 80px;
+  width: 120px;
   height: 5px;
   border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 h4 {
   color: #555;

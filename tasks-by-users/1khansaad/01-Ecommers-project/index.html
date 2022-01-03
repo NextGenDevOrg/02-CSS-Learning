@@ -26,7 +26,7 @@
                         <li><a href="">Accounts</a></li>
                     </ul>
                 </nav>
-                <img src="images/cart.png" alt="cart icon" width="30px" height="30px">
+                <img src="images/cart.png" alt="cart icon" class="cart-img" width="30px" height="30px">
                 <img src="images/menu.png" alt="" class="menu-icon" 
                 onclick="menutoggle()">
             </div>
@@ -376,22 +376,18 @@
                 <p class="copyright"> Copyright 2020 - Red Store</p>
             </div>
         </div>
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
-
-        MenuItems.style.maxHeight = "0px";
-
-        function menutoggle(){
-            if(MenuItems.style.maxHeight == "0px")
-            {
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+      
+            MenuItems.style.maxHeight = "0px";
+      
+            function menutoggle() {
+              if (MenuItems.style.maxHeight == "0px") {
                 MenuItems.style.maxHeight = "200px";
-            }
-        else
-            {
+              } else {
                 MenuItems.style.maxHeight = "0px";
+              }
             }
-        }
-
-    </script>
+          </script>
 </body>
 </html>
