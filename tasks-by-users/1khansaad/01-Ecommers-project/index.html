@@ -18,16 +18,19 @@
                     <img src="images/logo.png" alt="logo" width="125px">
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="">Home</a></li>
-                        <li><a href="">Peoducts</a></li>
+                        <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contacts</a></li>
                         <li><a href="">Accounts</a></li>
                     </ul>
                 </nav>
                 <img src="images/cart.png" alt="cart icon" width="30px" height="30px">
+                <img src="images/menu.png" alt="" class="menu-icon" 
+                onclick="menutoggle()">
             </div>
+
             <div class="row">
                 <div class="col-2">
                     <h1>Give Your Workout<br>A New Look</h1>
@@ -62,7 +65,7 @@
                                              <!-- featured products -->
                                          
     <div class="small-container">
-        <h2>Featured Products</h2>
+        <h2  class="title">Featured Products</h2>
         <div class="row">
             <div class="col-4">
                 <img src="images/product-1.jpg" alt="product">
@@ -74,9 +77,9 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                    </div
+                    </div>
+                    <p>$50.00</p>
                 </div>
-                <p>$50.00</p>
             </div>
             <div class="col-4">
                 <img src="images/product-2.jpg" alt="product">
@@ -88,10 +91,10 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                    </div
+                    </div>
+                    <p>$50.00</p>
                 </div>
-                <p>$50.00</p>
-            </div>
+            </div>    
             <div class="col-4">
                 <img src="images/product-3.jpg" alt="product">
                 <h4>Red Printed Tshirt</h4>
@@ -102,10 +105,10 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                    </div
+                    </div>
+                    <p>$50.00</p>
                 </div>
-                <p>$50.00</p>
-            </div>
+            </div>    
             <div class="col-4">
                 <img src="images/product-4.jpg" alt="product">
                 <h4>Red Printed Tshirt</h4>
@@ -116,11 +119,279 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                    </div
-                <p>$50.00</p>
+                    </div>
+                    <p>$50.00</p>
+                </div>
             </div>
         </div>
-    </div>
 
+        <!-- featured products -->
+
+        <h1 class="title">latest product</h1>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg" alt="product">
+                <h4>Red Printed Tshirt</h4>
+                <div class="rating">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg" alt="product">
+                <h4>Red Printed Tshirt</h4>
+                <div class="rating">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>    
+            <div class="col-4">
+                <img src="images/product-7.jpg" alt="product">
+                <h4>Red Printed Tshirt</h4>
+                <div class="rating">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>    
+            <div class="col-4">
+                <img src="images/product-8.jpg" alt="product">
+                <h4>Red Printed Tshirt</h4>
+                <div class="rating">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="product">
+                <h4>Red Printed Tshirt</h4>
+                <div class="rating">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg" alt="product">
+                <h4>Red Printed Tshirt</h4>
+                <div class="rating">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>    
+            <div class="col-4">
+                <img src="images/product-11.jpg" alt="product">
+                <h4>Red Printed Tshirt</h4>
+                <div class="rating">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>    
+            <div class="col-4">
+                <img src="images/product-12.jpg" alt="product">
+                <h4>Red Printed Tshirt</h4>
+                <div class="rating">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- offer products -->
+
+         <div class="offer">
+             <div class="small-container">
+                 <div class="row">
+                     <div class="col-2">
+                         <img src="images/exclusive.png" class="offer-img" alt="">
+                     </div>
+                     <div class="col-2">
+                         <p>Exclusively Available on Redstore</p>
+                         <h1>smart band 4</h1>
+                         <small>Screen Brightness:Up to 400 nits (max brightness), brightness adjustable
+                            Touchscreen type:On-cell capacitive touchscreen
+                            Screen protection:2.5D tempered glass with anti-fingerprint coating.<br></small>
+                            <a href="" class="btn">Buy Now &#8594</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+         <!-- testiminial -->
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="images/user-1.png" alt="">
+                        <h3>sean parker</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="images/user-2.png" alt="">
+                        <h3>sean parker</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="images/user-3.png" alt="">
+                        <h3>sean parker</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- brands -->
+
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/logo-godrej.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-coca-cola.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-oppo.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-paypal.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-godrej.png" alt="">
+                    </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Dowmload our app</h3>
+                        <p>It is a long established fact that a reader will be.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png" alt="">
+                            <img src="images/app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png" alt="">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful link</h3>
+                        <ul>
+                            <li>coupons</li>
+                            <li>blog post</li>
+                            <li>return policy</li>
+                            <li>Join us</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Linked in</li>
+                            <li>You tube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright"> Copyright 2020 - Red Store</p>
+            </div>
+        </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
 </body>
 </html>
