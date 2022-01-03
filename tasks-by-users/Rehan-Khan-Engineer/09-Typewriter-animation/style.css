@@ -1,0 +1,89 @@
+:root {
+  --bg-color: rgb(214, 122, 16);
+  --type-writer-speed: 6s;
+  --type-writer-steps: 24;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--bg-color);
+}
+
+h1 {
+  font-size: 8vw;
+
+  position: relative;
+
+  border: 2px solid red;
+}
+
+h1::before,
+h1::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background-color: var(--bg-color);
+
+  animation: typewriter var(--type-writer-speed) steps(var(--type-writer-steps))
+    1s forwards;
+}
+
+h1::after {
+  background-color: black;
+
+  width: 0.125em;
+
+  animation: typewriter var(--type-writer-speed) steps(var(--type-writer-steps))
+      1s forwards,
+    blink 0.75s steps(var(--type-writer-steps)) infinite;
+}
+
+.subtitle {
+  font-size: 5vw;
+  font-weight: 400;
+
+  opacity: 0;
+
+  transform: translateY(3rem);
+
+  animation: fade 2s ease calc(var(--type-writer-speed) + 1s) forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
