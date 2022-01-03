@@ -5,8 +5,9 @@
   background: #333;
 }
 .container {
-  display: flex;
   height: 100vh;
+
+  display: flex;
   text-align: center;
   align-items: center;
   justify-content: space-around;
@@ -39,7 +40,6 @@
   transform: translateY(-106px);
   height: 33vh;
   background: rgb(221, 33, 33);
-  overflow: hidden;
 }
 .container .cards:hover .face2 {
   transform: translateY(0);
