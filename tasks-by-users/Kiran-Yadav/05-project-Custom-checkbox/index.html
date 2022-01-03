@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Check Box</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .wrapper{
+            height: 100vh;
+            width: 100vw;
+            background-color: #333;
+        }
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% -50%);
+        }
+        input[type="checkbox"]{
+            height: 40px;
+            width: 80px;
+            appearance: none;
+            background: #6e6e6e;
+            outline: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+
+        input[type="checkbox"]:before{
+
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            transform: scale(1.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+            background: #fff;
+        }
+        input:checked[type="checkbox"]{
+            background: #03a9f4;
+        }
+        input:checked[type="checkbox"]:before{
+            left: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="center">
+            <input type="checkbox" class="">
+        </div>
+    </div>
+    
+</body>
+</html>

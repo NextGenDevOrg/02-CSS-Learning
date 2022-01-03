@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Mansion with grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: rgb(22, 20, 20);
+        font-size: 1.5rem;
+      }
+      .container {
+        min-height: 100vh;
+        max-width: 100vw;
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(4 1fr);
+        grid-template-rows: auto auto auto;
+        /* repeat(3 1fr) OR 1fr 1fr 1fr*/
+        grid-template-areas: "H H S T" "M C S A" "M K K K";
+        gap: 10px;
+      }
+      .box {
+        background: rgb(63, 59, 59);
+        text-align: center;
+        transition: 0.5s;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .box:hover {
+        background-image: linear-gradient(rgb(58, 122, 6), rgb(16, 111, 155));
+        color: rgb(245, 245, 245);
+      }
+      .box1 {
+        grid-area: H;
+      }
+      .box2 {
+        grid-area: S;
+      }
+      .box2 img {
+        margin-top: 130px;
+      }
+      .box3 {
+        grid-area: T;
+      }
+      .box4 {
+        grid-area: M;
+      }
+      .box4 img {
+        margin-top: 130px;
+      }
+      .box5 {
+        grid-area: C;
+      }
+      .box6 {
+        grid-area: A;
+      }
+      .box7 {
+        grid-area: K;
+      }
+
+      @media screen and (min-width: 601px) and (max-width: 750px) {
+        .container {
+          min-height: 100vh;
+          grid-template-columns: repeat(3 1fr);
+          grid-template-rows: repeat(4 1fr);
+          grid-template-areas: "H H S" "T M S" "C M A" "K K K";
+          font-size: 1.2rem;
+        }
+        .box2 img {
+          margin-top: 80px;
+        }
+        .box4 img {
+          margin-top: 80px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .container {
+          grid-template-columns: 1fr;
+          grid-template-rows: (1fr 1fr 1fr 1fr 1fr 1fr 1fr);
+          grid-template-areas: "H" "S" "T" "M" "C" "A" "K";
+          font-size: 1.2rem;
+        }
+        .box2 img {
+          margin-top: 0px;
+        }
+        .box4 img {
+          margin-top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <img src="Img/washing-hands.png" width="100px" height="100px" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          vitae, fugit ratione excepturi sequi assumenda?
+        </p>
+      </div>
+      <div class="box box2">
+        <img src="Img/sneeze.png" width="100px" height="100px" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          vitae, fugit ratione excepturi sequi assumenda?
+        </p>
+      </div>
+      <div class="box3 box">
+        <img src="Img/Travel.png" width="100px" height="100px" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          vitae, fugit ratione excepturi sequi assumenda?
+        </p>
+      </div>
+      <div class="box4 box">
+        <img src="Img/Medical.png" width="100px" height="100px" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          vitae, fugit ratione excepturi sequi assumenda?
+        </p>
+      </div>
+      <div class="box5 box">
+        <img src="Img/food.png" width="100px" height="100px" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          vitae, fugit ratione excepturi sequi assumenda?
+        </p>
+      </div>
+      <div class="box6 box">
+        <img src="Img/animal.png" width="100px" height="100px" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          vitae, fugit ratione excepturi sequi assumenda?
+        </p>
+      </div>
+      <div class="box7 box">
+        <img src="Img/mask.png" width="100px" height="100px" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          vitae, fugit ratione excepturi sequi assumenda?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

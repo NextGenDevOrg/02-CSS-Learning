@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Select Box</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #004882;
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .box select{
+            height: 50px;
+            width: 250px;
+            background-color: rgb(34, 83, 156);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            font-size: 20px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5) ;
+        }
+        .box:before{
+            content: '\f358';
+            font-family: "Font Awesome 5 free";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background: #007ce0;
+            color: #fff;
+            line-height: 50px;
+            text-align: center;
+            font-size: 28px;
+        }
+        .box:before:hover{
+            background-color: dodgerblue;
+            box-shadow: 0px 0px 10px rgb(115, 137, 158);
+        }
+    </style>
+</head>
+<body>
+        <div class="box">
+            <select>
+                <option value="">Select</option>
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+                <option value="">Option 4</option>
+                <option value="">Option 5</option>
+            </select>
+
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrap {
+        background-color: #fff;
+        width: 100vw;
+        text-align: center;
+      }
+      h1 {
+        position: relative;
+        font-family: monospace;
+        color: rgb(131, 126, 126);
+        width: max-content;
+        margin: 0 auto;
+      }
+      h1::before, h1::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+      h1::before {
+        background: #fff;
+        animation: typewriter 5s steps(29) forwards;
+      }
+      h1::after{
+        width: 0.125rem;
+        background-color: black;
+        animation: typewriter 5s steps(29) forwards, blink 500ms steps(29) infinite;
+      }
+      p{
+        transform: translateY(100px);
+        animation: upside 1s ease-in-out forwards;
+      }
+      @keyframes upside {
+        from
+        {
+          opacity: 0;
+        }
+        to{
+          transform: translateY(20px);
+          opacity: 1;
+        }
+      }
+
+      @keyframes blink {
+        to{
+          background: transparent;
+        }
+      }
+
+      @keyframes typewriter {
+        to {
+          left: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Hello, Welcome to the show...</h1>
+      <p>Welcome to my website!</p>
+    </div>
+  </body>
+</html>
