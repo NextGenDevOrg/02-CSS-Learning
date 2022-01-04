@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>All Products - RedStore</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.htm"><img src="images/logo.png" alt="logo" width="125px" /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" /></a>
+        <img
+          src="images/menu.png"
+          class="menu-icon"
+          alt=""
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+    <!-- ===========account============ -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" alt="product">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()" >Login</span>
+                            <span onclick="register()" >Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form action="" id="LoginForm">
+                            <input type="text" placeholder="User ID">
+                            <input type="text" placeholder="Password">
+                            <button class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                        <form action="" id="RegForm">
+                            <input type="text" placeholder="User ID">
+                            <input type="email" placeholder="Enter your email ID">
+                            <input type="text" placeholder="Password">
+                            <button class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========footer============= -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis, adipisci.
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="playstore-img" />
+              <img src="images/app-store.png" alt="app-store-img" />
+            </div>
+          </div>
+          <div class="foter-col-2">
+            <img src="images/logo-white.png" alt="logo" />
+            <p>Download App for Android and iOS Mobile Phones</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Liks</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Posts</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow US on</h3>
+            <ul>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Facebook</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">&copy; Copyright 2021 - RedStore.com</p>
+      </div>
+    </footer>
+    <!-- ========= JS FOR MENU ======== -->
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!-- =============JS for toggle form=========== -->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator")
+
+        function register(){
+            RegForm.style.transform= "translateX(0px)";
+            LoginForm.style.transform= "translateX(0px)";
+            Indicator.style.transform="translateX(100px)";
+        }
+        function login(){
+            RegForm.style.transform= "translateX(300px)";
+            LoginForm.style.transform= "translateX(300px)";
+            Indicator.style.transform="translateX(0px)";
+        }
+
+
+    </script>
+
+  </body>
+</html>
