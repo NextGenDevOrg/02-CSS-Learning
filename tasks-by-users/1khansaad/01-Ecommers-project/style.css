@@ -261,6 +261,51 @@ select:focus {
   background: #ff523b;
   color: white;
 }
+/* 3RD PAGE */
+
+.single-product .col-2 img {
+  padding: 2px;
+}
+.single-product .col-2 {
+  padding: 10px;
+}
+.single-product h4 {
+  margin: px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-product select {
+  display: block;
+  padding: 8px;
+}
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid red;
+}
+input:focus {
+  outline: none;
+}
+.row-container {
+  display: flex;
+  cursor: pointer;
+}
+.single-product {
+  margin: 0 10%;
+}
+.single-product .col-2 p {
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.row-2 {
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
 @media only screen and (max-width: 850px) {
   nav ul {
     position: absolute;
@@ -282,6 +327,9 @@ select:focus {
     display: block;
     cursor: pointer;
   }
+  .single-product {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 600px) {
   .row {
@@ -299,6 +347,9 @@ select:focus {
   .footer-col-1 {
     flex-basis: 100%;
     margin: 20px 0;
+  }
+  .single-product .row {
+    text-align: left;
   }
 }
 @media only screen and (max-width: 550px) {
