@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>Redstore Ecommers web design</title>
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contacts</a></li>
+                        <li><a href="">Accounts</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" alt="cart-icon" class="cart-img" width="30px" height="30px">
+                <img src="images/menu.png" alt="menu-icon" class="menu-icon" 
+                onclick="menutoggle()">
+            </div>
+        </div>
+        <!-- account -->
+
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/image1.png" alt="" width="100%">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span>Login</span>
+                                <span>Register</span>
+                                <hr id="indicator">
+                            </div>
+                            <form id="LoginForm">
+                                <input type="text" placeholder="Username">
+                                <input type="Password" placeholder="Password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">Forgot Password</a>
+                            </form>
+                            <form id="RegForm">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Register</button>
+                            </form>
+                        </div>
+
+                        
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- footer -->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Dowmload our app</h3>
+                        <p>It is a long established fact that a reader will be.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png" alt="play-store-icon">
+                            <img src="images/app-store.png" alt="app-store-icon">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png" alt="redstore-logo">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful link</h3>
+                        <ul>
+                            <li>coupons</li>
+                            <li>blog post</li>
+                            <li>return policy</li>
+                            <li>Join us</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Linked in</li>
+                            <li>You tube</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+                <p class="copyright"> Copyright 2020 - Red Store</p>
+            </div>
+        </div>
+
+    </div>    
+
+    <!-- 
+        for togglemenu
+     -->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+      
+            MenuItems.style.maxHeight = "0px";
+      
+            function menutoggle() {
+              if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+              } else {
+                MenuItems.style.maxHeight = "0px";
+              }
+            }
+          </script>
+
+</body>
+</html>
