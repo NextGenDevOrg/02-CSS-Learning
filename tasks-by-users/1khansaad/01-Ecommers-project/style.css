@@ -90,7 +90,7 @@ a {
   min-width: 200px;
 }
 .small-container {
-  max-width: fit-content;
+  /* max-width: fit-content; */
   margin: auto;
   padding-left: 0 25px;
 }
@@ -306,6 +306,57 @@ input:focus {
   margin: 0 100px;
 }
 
+/* 4th paage cart */
+.cart-page {
+  margin: 80px auto;
+  /* padding: 0 100px; */
+}
+.cart-page .tb-1 {
+  width: 80%;
+  margin: 0 auto;
+}
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  font-weight: normal;
+  background: #ff523b;
+}
+td {
+  padding: 10px 5px;
+}
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a {
+  color: #ff523b;
+  font-size: 12px;
+}
+td img {
+  height: 80px;
+  width: 80px;
+  margin-right: 10px;
+}
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table {
+  border-top: 2px solid #ff523f;
+  width: 100%;
+  max-width: 400px;
+  margin-right: 10%;
+}
+td:last-child {
+  text-align: right;
+}
+
 @media only screen and (max-width: 850px) {
   nav ul {
     position: absolute;
@@ -351,10 +402,19 @@ input:focus {
   .single-product .row {
     text-align: left;
   }
+  .cart-info p {
+    display: none;
+  }
 }
 @media only screen and (max-width: 550px) {
   .filter {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .cart-info p {
+    display: none;
+  }
+  .total-price table {
+    margin: 20px;
   }
 }
