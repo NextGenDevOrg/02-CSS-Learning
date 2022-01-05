@@ -13,18 +13,18 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo.png" alt="logo" width="125px">
+                     <a href="index.html"><img src="images/logo.png" alt="logo" width="125px"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Product.html">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contacts</a></li>
-                        <li><a href="">Accounts</a></li>
+                        <li><a href="account.html">Accounts</a></li>
                     </ul>
                 </nav>
-                <img src="images/cart.png" alt="cart-icon" class="cart-img" width="30px" height="30px">
+                <a href="cart.html"><img src="images/cart.png" alt="cart-icon" class="cart-img" width="30px" height="30px"></a>
                 <img src="images/menu.png" alt="menu-icon" class="menu-icon" 
                 onclick="menutoggle()">
             </div>
@@ -40,8 +40,8 @@
                     <div class="col-2">
                         <div class="form-container">
                             <div class="form-btn">
-                                <span>Login</span>
-                                <span>Register</span>
+                                <span onclick="login()">Login</span>
+                                <span onclick="register()">Register</span>
                                 <hr id="indicator">
                             </div>
                             <form id="LoginForm">
@@ -128,6 +128,31 @@
               }
             }
           </script>
+    
+    <!-- 
+        for togglemenu
+     -->
+        
+        <script>
+            var LoginForm = document.getElementById("LoginForm")
+            var RegForm = document.getElementById("RegForm")
+            var indicator = document.getElementById("indicator")
+
+            function register(){
+
+                RegForm.style.transform = "TranslateX(0px)";
+                LoginForm.style.transform = "TranslateX(0px)";
+                indicator.style.transform = "TranslateX(100px)";
+            }
+
+             function login(){
+
+                RegForm.style.transform = "TranslateX(300px)";
+                LoginForm.style.transform = "TranslateX(300px)";
+                indicator.style.transform = "TranslateX(0px)";
+            }
+        </script>
+
 
 </body>
 </html>

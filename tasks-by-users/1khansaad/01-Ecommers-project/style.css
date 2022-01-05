@@ -9,6 +9,7 @@ body {
 .navbar {
   display: flex;
   align-content: center;
+
   padding: 20px;
 }
 .cart-img {
@@ -62,17 +63,18 @@ a {
 }
 .btn {
   display: inline-block;
-  background: #ff523b;
-  color: white;
   padding: 8px 30px;
   margin: 30px 0;
+
+  background: #ff523b;
+  color: white;
   border-radius: 30px;
   transition: 0.4s;
 }
 .btn:hover {
   background: red;
-  transition: 0.3s;
   color: black;
+  transition: 0.3s;
 }
 .header {
   background: radial-gradient(#fff, #ffd6d6);
@@ -90,15 +92,14 @@ a {
   min-width: 200px;
 }
 .small-container {
-  /* max-width: fit-content; */
   margin: auto;
-  padding-left: 0 25px;
 }
 .col-4 {
   flex-basis: 25%;
-  padding: 10px;
   min-width: 200px;
   margin-bottom: 50px;
+  padding: 10px;
+
   transition: 0.8s;
 }
 .col-4 img {
@@ -106,17 +107,21 @@ a {
 }
 .title {
   text-align: center;
+
   margin: 0 auto 80px;
   line-height: 60px;
+
   color: #555;
   position: relative;
 }
 .title::after {
   content: "";
   background: red;
+
   width: 120px;
   height: 5px;
   border-radius: 5px;
+
   display: inline-block;
   position: absolute;
   bottom: 0;
@@ -145,8 +150,10 @@ small {
 }
 .testimonial .col-3 {
   text-align: center;
+
   padding: 40px 20px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
   cursor: pointer;
   transition: 0.8s;
 }
@@ -181,6 +188,7 @@ small {
 .footer {
   background: #000;
   color: #8a8a8a;
+
   font-size: 14px;
   padding: 60px 0 20px;
 }
@@ -244,17 +252,21 @@ select:focus {
 .filter {
   width: 1300px;
   margin: 0 20px;
+
   display: flex;
   justify-content: space-between;
 }
 .page-btn span {
   display: inline-block;
+
   border: 1px solid black;
   margin-left: 10px;
   width: 40px;
   height: 40px;
-  text-align: center;
   line-height: 40px;
+
+  text-align: center;
+
   cursor: pointer;
 }
 .page-btn span:hover {
@@ -281,9 +293,11 @@ select:focus {
 .single-product input {
   width: 50px;
   height: 40px;
+
   padding-left: 10px;
-  font-size: 20px;
   margin-right: 10px;
+
+  font-size: 20px;
   border: 1px solid red;
 }
 input:focus {
@@ -319,8 +333,9 @@ input:focus {
   flex-wrap: wrap;
 }
 th {
-  text-align: left;
   padding: 5px;
+
+  text-align: left;
   color: #fff;
   font-weight: normal;
   background: #ff523b;
@@ -348,6 +363,7 @@ td img {
 }
 .total-price table {
   border-top: 2px solid #ff523f;
+
   width: 100%;
   max-width: 400px;
   margin-right: 10%;
@@ -362,20 +378,25 @@ td:last-child {
 }
 .form-container {
   background: #fff;
+
   width: 300px;
   height: 400px;
-  position: relative;
-  text-align: center;
   padding: 20px 0;
   margin: auto;
+
+  position: relative;
+  text-align: center;
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .form-container span {
   font-weight: bold;
+
+  width: 100px;
   padding: 0 10px;
+
   color: #555;
   cursor: pointer;
-  width: 100px;
   display: inline-block;
 }
 .form-btn {
@@ -384,8 +405,10 @@ td:last-child {
 .form-container form {
   max-width: 300px;
   padding: 0 20px;
+
   position: absolute;
   top: 130px;
+  transition: 1s;
 }
 form input {
   width: 100%;
@@ -397,8 +420,9 @@ form input {
 form .btn {
   width: 100%;
   border: none;
-  cursor: pointer;
   margin: 10px 0;
+
+  cursor: pointer;
 }
 #LoginForm {
   left: -300px;
@@ -410,21 +434,22 @@ form a {
   font-size: 12px;
 }
 #indicator {
+  background-color: #ff523f;
+
   width: 100px;
-  border: none;
-  background: #ff523b;
   height: 3px;
   margin-top: 8px;
-  transform: translateY(100px);
-  position: absolute;
-  top: -60px;
-  left: 150px;
+
+  border: none;
+  transform: translateX(100px);
+  transition: 1s;
 }
 @media only screen and (max-width: 850px) {
   nav ul {
     position: absolute;
     top: 70px;
     left: 0;
+
     background: #333;
     width: 100%;
     overflow: hidden;
